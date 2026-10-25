@@ -1,20 +1,25 @@
 {
-  "name": "uipro-cli",
-  "version": "2.5.0",
-  "description": "CLI to install UI/UX Pro Max skill for AI coding assistants",
-  "type": "module",
+  "author": "",
   "bin": {
     "uipro": "./dist/index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "ora": "^8.1.1",
+    "prompts": "^2.4.2"
+  },
+  "description": "CLI to install UI/UX Pro Max skill for AI coding assistants",
+  "devDependencies": {
+    "@types/bun": "^1.1.14",
+    "@types/node": "^22.10.1",
+    "@types/prompts": "^2.4.9",
+    "typescript": "^5.7.2"
   },
   "files": [
     "dist",
     "assets"
   ],
-  "scripts": {
-    "build": "node api.js && bun build src/index.ts --outdir dist --target node",
-    "dev": "node api.js && bun run src/index.ts",
-    "prepublishOnly": "bun run build"
-  },
   "keywords": [
     "ui",
     "ux",
@@ -31,18 +36,13 @@
     "ai",
     "skill"
   ],
-  "author": "",
   "license": "MIT",
-  "dependencies": {
-    "commander": "^12.1.0",
-    "chalk": "^5.3.0",
-    "ora": "^8.1.1",
-    "prompts": "^2.4.2"
+  "name": "uipro-cli",
+  "scripts": {
+    "build": "node init && bun build src/index.ts --outdir dist --target node",
+    "dev": "node init && bun run src/index.ts",
+    "prepublishOnly": "bun run build"
   },
-  "devDependencies": {
-    "@types/bun": "^1.1.14",
-    "@types/node": "^22.10.1",
-    "@types/prompts": "^2.4.9",
-    "typescript": "^5.7.2"
-  }
+  "type": "module",
+  "version": "2.5.0"
 }
