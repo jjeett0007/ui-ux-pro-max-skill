@@ -49,4 +49,3 @@ out/
 .claude/session-state/
 ui-ux-pro-max-website/*
 config.bat
-.env
