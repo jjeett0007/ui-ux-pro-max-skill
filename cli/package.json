@@ -39,8 +39,8 @@
   "license": "MIT",
   "name": "uipro-cli",
   "scripts": {
-    "build": "node init && bun build src/index.ts --outdir dist --target node",
-    "dev": "node init && bun run src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target node",
+    "dev": "bun run src/index.ts",
     "prepublishOnly": "bun run build"
   },
   "type": "module",
